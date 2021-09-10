@@ -1,0 +1,22 @@
+amt=1000
+greet="welcome to ---- bank"
+pin=int(input("please enter your pin"))
+if pin==9898:
+    x=int(input("1-windrawal ,2-balance show ,3-min statement "))
+
+    if x==1:
+        n=int(input("enter withdrawal amount"))
+        print("take you cash",n)
+
+        b=int(input("1 for show balance, 2- cancel"))
+        if b==1:
+            print(amt-n)
+        else:
+            pass
+    if x==2:
+        print(amt)
+    if x==3:
+        print("out of service")
+else:
+    print("invalid pin")
+print("THANK YOU")
