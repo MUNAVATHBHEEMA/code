@@ -1,5 +1,5 @@
 amt=1000
-greet="welcome to ---- bank"
+print("welcome to ---- bank")
 pin=int(input("please enter your pin"))
 if pin==9898:
     x=int(input("1-windrawal ,2-balance show ,3-min statement "))
@@ -7,7 +7,7 @@ if pin==9898:
     if x==1:
         n=int(input("enter withdrawal amount"))
         if n<amt:
-            print("take you cash",n)
+            print("take your cash",n)
             b = int(input("1 - show balance, 2- cancel"))
             if b == 1:
                 print(amt - n)
