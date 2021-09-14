@@ -6,13 +6,17 @@ if pin==9898:
 
     if x==1:
         n=int(input("enter withdrawal amount"))
-        print("take you cash",n)
-
-        b=int(input("1 for show balance, 2- cancel"))
-        if b==1:
-            print(amt-n)
+        if n<amt:
+            print("take you cash",n)
+            b = int(input("1 - show balance, 2- cancel"))
+            if b == 1:
+                print(amt - n)
+            else:
+                pass
         else:
-            pass
+            print("insufficient balance")
+
+
     if x==2:
         print(amt)
     if x==3:
